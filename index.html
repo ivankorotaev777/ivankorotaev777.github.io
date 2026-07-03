@@ -111,6 +111,11 @@
   .card h3{font-family:"Space Grotesk";font-weight:600;font-size:1.22rem;line-height:1.25}
   .card .role{color:var(--accent-2);font-weight:500;font-size:.92rem;margin-top:2px}
   .card p.desc{color:var(--muted);font-size:.95rem;margin-top:10px}
+  .card .site{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-family:"Space Grotesk";font-weight:500;font-size:.84rem;color:var(--accent-2);text-decoration:none;border-bottom:1px solid rgba(34,211,238,.35);padding-bottom:1px;transition:.2s;width:fit-content}
+  .card .site:hover{color:#fff;border-color:#fff}
+  .node:nth-child(odd) .site{margin-left:auto}
+  a.logo-chip{cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s}
+  a.logo-chip:hover{transform:translateY(-2px);box-shadow:0 10px 24px -8px rgba(0,0,0,.7)}
   .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
   .node:nth-child(odd) .tags{justify-content:flex-end}
   .tag{font-size:.74rem;color:var(--faint);border:1px solid var(--line);border-radius:8px;padding:4px 10px;background:rgba(255,255,255,.02)}
@@ -188,11 +193,12 @@
         <div class="card">
           <div class="era">Today</div>
           <div class="logo-row">
-            <div class="logo-chip"><img src="assets/ustores-icon.svg" alt="Ustores logo" style="height:26px" /><span style="font-family:'Space Grotesk';font-weight:700;color:#c0392b;font-size:15px;margin-left:8px">ustores</span></div>
+            <a class="logo-chip" href="https://www.ustores.uz/ru" target="_blank" rel="noopener"><img src="assets/ustores-icon.svg" alt="Ustores logo" style="height:26px" /><span style="font-family:'Space Grotesk';font-weight:700;color:#c0392b;font-size:15px;margin-left:8px">ustores</span></a>
           </div>
           <h3>Ustores</h3>
-          <div class="role">Investor &amp; Strategist</div>
-          <p class="desc">Backing and shaping the strategy of an e-commerce / retail-tech venture — bringing capital, financial discipline and go-to-market thinking to the table.</p>
+          <div class="role">Investor &amp; Strategist · Central Asia (Uzbekistan)</div>
+          <p class="desc">Backing and shaping the strategy of an e-commerce / retail-tech venture based in <b>Central Asia (Uzbekistan)</b> — bringing capital, financial discipline and go-to-market thinking to the table.</p>
+          <a class="site" href="https://www.ustores.uz/ru" target="_blank" rel="noopener">ustores.uz ↗</a>
           <div class="tags"><span class="tag">Strategy</span><span class="tag">Investment</span><span class="tag">E-commerce</span></div>
         </div>
       </div>
@@ -203,11 +209,12 @@
         <div class="card">
           <div class="era">Present</div>
           <div class="logo-row">
-            <div class="logo-chip"><img src="assets/latenode.png" alt="Latenode logo" style="height:30px" /><span style="font-family:'Space Grotesk';font-weight:700;color:#0f172a;font-size:15px;margin-left:8px">Latenode</span></div>
+            <a class="logo-chip" href="https://latenode.com" target="_blank" rel="noopener"><img src="assets/latenode.png" alt="Latenode logo" style="height:30px" /><span style="font-family:'Space Grotesk';font-weight:700;color:#0f172a;font-size:15px;margin-left:8px">Latenode</span></a>
           </div>
           <h3>Latenode</h3>
           <div class="role">Investor</div>
           <p class="desc">A low-code <b>workflow-automation platform</b> that lets teams connect apps, AI models and custom code into automated business processes. Invested early in the vision of AI-native automation.</p>
+          <a class="site" href="https://latenode.com" target="_blank" rel="noopener">latenode.com ↗</a>
           <div class="tags"><span class="tag">Workflow Automation</span><span class="tag">Low-code</span><span class="tag">AI</span><span class="tag">SaaS</span></div>
         </div>
       </div>
@@ -218,11 +225,12 @@
         <div class="card">
           <div class="era">Entrepreneur</div>
           <div class="logo-row">
-            <div class="logo-chip"><img src="assets/debexpert.svg" alt="Debexpert logo" /></div>
+            <a class="logo-chip" href="https://debexpert.com" target="_blank" rel="noopener"><img src="assets/debexpert.svg" alt="Debexpert logo" /></a>
           </div>
           <h3>Debexpert</h3>
           <div class="role">Founder · First own business</div>
           <p class="desc">Founded <b>Debexpert</b> — an online marketplace for buying and selling debt portfolios, connecting sellers with a network of institutional buyers. My first company built from zero, owning the product and the P&amp;L end-to-end.</p>
+          <a class="site" href="https://debexpert.com" target="_blank" rel="noopener">debexpert.com ↗</a>
           <div class="tags"><span class="tag">Founder</span><span class="tag">Fintech</span><span class="tag">Marketplace</span></div>
         </div>
       </div>
@@ -233,11 +241,12 @@
         <div class="card">
           <div class="era">Co-Founder</div>
           <div class="logo-row">
-            <div class="logo-chip"><img src="assets/debex.png" alt="Debex logo" style="height:26px" /><span style="font-family:'Space Grotesk';font-weight:700;color:#e11d26;font-size:15px;margin-left:7px">Debex</span></div>
+            <a class="logo-chip" href="https://debex.ru" target="_blank" rel="noopener"><img src="assets/debex.png" alt="Debex logo" style="height:26px" /><span style="font-family:'Space Grotesk';font-weight:700;color:#e11d26;font-size:15px;margin-left:7px">Debex</span></a>
           </div>
           <h3>Debex</h3>
           <div class="role">Co-Founder · $1M seed raised</div>
           <p class="desc">Co-founded <b>Debex</b> (debex.ru) — an online <b>debt auction</b> where consumer debt portfolios are bought and sold between banks, collection agencies and investors. Raised <b>$1M in seed funding</b> to build the marketplace.</p>
+          <a class="site" href="https://debex.ru" target="_blank" rel="noopener">debex.ru ↗</a>
           <div class="tags"><span class="tag">Co-Founder</span><span class="tag">$1M Seed</span><span class="tag">Fintech</span><span class="tag">Marketplace</span></div>
         </div>
       </div>
@@ -248,11 +257,12 @@
         <div class="card">
           <div class="era">Finance Leadership</div>
           <div class="logo-row">
-            <div class="logo-chip"><img src="assets/carprice.png" alt="CarPrice logo" style="height:30px" /><span style="font-family:'Space Grotesk';font-weight:700;color:#0f172a;font-size:15px;margin-left:7px">CarPrice</span></div>
+            <a class="logo-chip" href="https://carprice.ru" target="_blank" rel="noopener"><img src="assets/carprice.png" alt="CarPrice logo" style="height:30px" /><span style="font-family:'Space Grotesk';font-weight:700;color:#0f172a;font-size:15px;margin-left:7px">CarPrice</span></a>
           </div>
           <h3>CFO — Digital Companies</h3>
           <div class="role">Chief Financial Officer · incl. CarPrice</div>
           <p class="desc">Moved from advisor to operator — taking the <b>CFO seat</b> in fast-scaling digital businesses such as <b>CarPrice</b>. Owned finance, planning, fundraising and unit economics inside high-growth tech.</p>
+          <a class="site" href="https://carprice.ru" target="_blank" rel="noopener">carprice.ru ↗</a>
           <div class="tags"><span class="tag">CFO</span><span class="tag">FP&amp;A</span><span class="tag">Fundraising</span><span class="tag">Unit Economics</span></div>
         </div>
       </div>
@@ -263,11 +273,12 @@
         <div class="card">
           <div class="era">4 Years</div>
           <div class="logo-row">
-            <div class="logo-chip"><img src="assets/kpmg.svg" alt="KPMG logo" style="height:26px" /></div>
+            <a class="logo-chip" href="https://kpmg.com" target="_blank" rel="noopener"><img src="assets/kpmg.svg" alt="KPMG logo" style="height:26px" /></a>
           </div>
           <h3>KPMG</h3>
           <div class="role">Finance · Audit · Consulting</div>
           <p class="desc">Four formative years inside a <b>Big Four</b> firm — auditing and advising businesses across finance and consulting. Where rigour, analytical discipline and financial fluency became second nature.</p>
+          <a class="site" href="https://kpmg.com" target="_blank" rel="noopener">kpmg.com ↗</a>
           <div class="tags"><span class="tag">Audit</span><span class="tag">Consulting</span><span class="tag">Big Four</span></div>
         </div>
       </div>
@@ -278,11 +289,12 @@
         <div class="card">
           <div class="era">Education</div>
           <div class="logo-row">
-            <div class="logo-chip"><img src="assets/acca-square.svg" alt="ACCA logo" style="height:34px" /></div>
+            <a class="logo-chip" href="https://www.accaglobal.com" target="_blank" rel="noopener"><img src="assets/acca-square.svg" alt="ACCA logo" style="height:34px" /></a>
           </div>
           <h3>ACCA — United Kingdom</h3>
           <div class="role">Chartered financial education</div>
           <p class="desc">Earned a professional financial education and the <b>ACCA</b> qualification in the <b>UK</b> — the foundation of an international career built on accounting and finance.</p>
+          <a class="site" href="https://www.accaglobal.com" target="_blank" rel="noopener">accaglobal.com ↗</a>
           <div class="tags"><span class="tag">ACCA</span><span class="tag">Finance</span><span class="tag">United Kingdom</span></div>
         </div>
       </div>
