@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ivan Korotaev — Finance Leader, Entrepreneur & Investor</title>
+<meta name="description" content="From the USSR to global tech: the journey of Ivan Korotaev — ACCA-qualified finance leader, ex-KPMG, CFO in digital companies, founder of Dibexport, investor in Latenode and Ustores." />
+<meta name="author" content="Ivan Korotaev" />
+<meta property="og:title" content="Ivan Korotaev — Finance Leader, Entrepreneur & Investor" />
+<meta property="og:description" content="From the USSR to global tech — audit, finance leadership, entrepreneurship and investing." />
+<meta property="og:type" content="profile" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#080a12;
+    --bg-2:#0d1120;
+    --ink:#eef1fb;
+    --muted:#9aa3c0;
+    --faint:#6a7492;
+    --line:#232a44;
+    --accent:#7c5cff;
+    --accent-2:#22d3ee;
+    --gold:#f5c451;
+    --card:rgba(255,255,255,.035);
+    --card-brd:rgba(255,255,255,.09);
+    --shadow:0 20px 60px -20px rgba(0,0,0,.7);
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  /* Aurora background */
+  .aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+  .aurora span{position:absolute;border-radius:50%;filter:blur(120px);opacity:.5}
+  .aurora .a1{width:520px;height:520px;background:#5b3cff;top:-160px;left:-120px}
+  .aurora .a2{width:460px;height:460px;background:#0e7490;bottom:-140px;right:-100px}
+  .aurora .a3{width:400px;height:400px;background:#b8860b;top:40%;left:55%;opacity:.22}
+  .noise{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.035;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+  .wrap{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;padding:0 22px}
+
+  /* ---------- HERO ---------- */
+  header.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;padding:90px 0 40px}
+  .kicker{font-family:"Space Grotesk";letter-spacing:.34em;text-transform:uppercase;font-size:.72rem;color:var(--accent-2);margin-bottom:22px;display:flex;align-items:center;gap:12px}
+  .kicker::before{content:"";width:38px;height:1px;background:linear-gradient(90deg,var(--accent-2),transparent)}
+  h1{font-family:"Space Grotesk";font-weight:700;font-size:clamp(2.7rem,7vw,5.4rem);line-height:1.02;letter-spacing:-.02em}
+  h1 .grad{background:linear-gradient(120deg,#fff 10%,#b6a7ff 45%,#67e8f9 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .tagline{margin-top:22px;font-size:clamp(1.05rem,2.4vw,1.5rem);color:var(--muted);max-width:640px;font-weight:400}
+  .tagline b{color:var(--ink);font-weight:600}
+  .facts{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+  .fact{border:1px solid var(--card-brd);background:var(--card);border-radius:100px;padding:9px 18px;font-size:.86rem;color:var(--muted);backdrop-filter:blur(6px)}
+  .fact b{color:var(--ink);font-weight:600}
+  .cta{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-family:"Space Grotesk";font-weight:500;font-size:.92rem;padding:13px 22px;border-radius:12px;text-decoration:none;transition:.25s;border:1px solid transparent}
+  .btn.primary{background:linear-gradient(120deg,var(--accent),#5b8cff);color:#fff;box-shadow:0 12px 30px -10px rgba(124,92,255,.8)}
+  .btn.primary:hover{transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(124,92,255,.9)}
+  .btn.ghost{border-color:var(--card-brd);color:var(--ink);background:var(--card)}
+  .btn.ghost:hover{border-color:var(--accent-2);color:#fff}
+  .scrollhint{margin-top:60px;color:var(--faint);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:10px;font-family:"Space Grotesk"}
+  .scrollhint .dot{width:6px;height:6px;border-radius:50%;background:var(--accent-2);animation:pulse 1.8s infinite}
+  @keyframes pulse{0%,100%{opacity:.3;transform:scale(1)}50%{opacity:1;transform:scale(1.6)}}
+
+  /* ---------- SECTION HEAD ---------- */
+  .section-head{text-align:center;margin:20px 0 20px}
+  .section-head .eyebrow{font-family:"Space Grotesk";letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;color:var(--accent-2)}
+  .section-head h2{font-family:"Space Grotesk";font-weight:600;font-size:clamp(1.7rem,4vw,2.6rem);margin-top:12px;letter-spacing:-.01em}
+  .section-head p{color:var(--muted);max-width:560px;margin:14px auto 0}
+  .updown{display:inline-flex;align-items:center;gap:8px;margin-top:18px;color:var(--gold);font-family:"Space Grotesk";font-size:.82rem;letter-spacing:.14em;text-transform:uppercase}
+
+  /* ---------- TIMELINE (snake, bottom = roots) ---------- */
+  .timeline{position:relative;padding:50px 0 10px;margin-top:10px}
+  /* central spine */
+  .timeline::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:3px;transform:translateX(-50%);
+    background:linear-gradient(180deg,var(--accent) 0%,var(--accent-2) 45%,var(--gold) 100%);
+    border-radius:3px;opacity:.55;box-shadow:0 0 24px rgba(124,92,255,.4)}
+  .node{position:relative;width:50%;padding:26px 46px;margin:12px 0}
+  .node:nth-child(odd){left:0;text-align:right}
+  .node:nth-child(even){left:50%}
+  /* connector dot on spine */
+  .node .pin{position:absolute;top:38px;width:20px;height:20px;border-radius:50%;
+    background:var(--bg-2);border:3px solid var(--accent-2);z-index:3;
+    box-shadow:0 0 0 6px rgba(34,211,238,.12),0 0 22px rgba(34,211,238,.5)}
+  .node:nth-child(odd) .pin{right:-10px}
+  .node:nth-child(even) .pin{left:-10px}
+  /* connector arm */
+  .node .arm{position:absolute;top:47px;height:2px;width:36px;background:linear-gradient(90deg,var(--accent-2),transparent);opacity:.6}
+  .node:nth-child(odd) .arm{right:0;background:linear-gradient(270deg,var(--accent-2),transparent)}
+  .node:nth-child(even) .arm{left:0}
+
+  .card{position:relative;background:var(--card);border:1px solid var(--card-brd);border-radius:18px;padding:22px 22px 24px;
+    backdrop-filter:blur(10px);box-shadow:var(--shadow);transition:transform .3s,border-color .3s}
+  .card:hover{transform:translateY(-4px);border-color:rgba(124,92,255,.5)}
+  .node:nth-child(odd) .card{align-items:flex-end}
+  .era{font-family:"Space Grotesk";font-weight:700;font-size:.8rem;letter-spacing:.16em;color:var(--gold);text-transform:uppercase}
+  .logo-row{display:flex;align-items:center;gap:12px;margin:12px 0 8px}
+  .node:nth-child(odd) .logo-row{flex-direction:row-reverse}
+  .logo-chip{flex:0 0 auto;height:44px;min-width:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;padding:0 12px;
+    background:#fff;box-shadow:0 6px 18px -8px rgba(0,0,0,.6)}
+  .logo-chip svg{display:block}
+  .card h3{font-family:"Space Grotesk";font-weight:600;font-size:1.22rem;line-height:1.25}
+  .card .role{color:var(--accent-2);font-weight:500;font-size:.92rem;margin-top:2px}
+  .card p.desc{color:var(--muted);font-size:.95rem;margin-top:10px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .node:nth-child(odd) .tags{justify-content:flex-end}
+  .tag{font-size:.74rem;color:var(--faint);border:1px solid var(--line);border-radius:8px;padding:4px 10px;background:rgba(255,255,255,.02)}
+
+  /* reveal animation */
+  .node{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+  .node.in{opacity:1;transform:none}
+
+  /* origin marker at very bottom */
+  .origin{position:relative;text-align:center;margin-top:6px;padding-bottom:20px}
+  .origin .star{width:46px;height:46px;margin:0 auto;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    background:radial-gradient(circle at 50% 35%,#ff5a5f,#b91c1c);box-shadow:0 0 30px rgba(220,38,38,.6)}
+  .origin small{display:block;color:var(--faint);margin-top:12px;font-family:"Space Grotesk";letter-spacing:.2em;text-transform:uppercase;font-size:.72rem}
+
+  /* ---------- FOOTER ---------- */
+  footer{margin-top:70px;border-top:1px solid var(--line);padding:46px 0 60px;text-align:center}
+  footer .name{font-family:"Space Grotesk";font-weight:600;font-size:1.15rem}
+  footer .links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+  footer a{color:var(--muted);text-decoration:none;font-size:.92rem;border:1px solid var(--line);padding:10px 18px;border-radius:10px;transition:.2s}
+  footer a:hover{color:#fff;border-color:var(--accent-2)}
+  footer .copy{color:var(--faint);font-size:.8rem;margin-top:26px}
+
+  /* ---------- MOBILE ---------- */
+  @media(max-width:760px){
+    .timeline::before{left:22px}
+    .node,.node:nth-child(odd),.node:nth-child(even){width:100%;left:0;text-align:left;padding:14px 0 14px 52px}
+    .node:nth-child(odd) .pin,.node:nth-child(even) .pin{left:12px;right:auto}
+    .node:nth-child(odd) .arm,.node:nth-child(even) .arm{left:32px;width:20px;background:linear-gradient(90deg,var(--accent-2),transparent)}
+    .node:nth-child(odd) .logo-row{flex-direction:row}
+    .node:nth-child(odd) .tags{justify-content:flex-start}
+    .origin{text-align:left;padding-left:8px}
+    .origin .star{margin:0}
+  }
+</style>
+</head>
+<body>
+<div class="aurora"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+<div class="noise"></div>
+
+<div class="wrap">
+  <!-- HERO -->
+  <header class="hero">
+    <div class="kicker">Finance · Entrepreneurship · Investing</div>
+    <h1>Ivan <span class="grad">Korotaev</span></h1>
+    <p class="tagline">From a childhood in the <b>USSR</b> to the frontier of global tech — a journey through <b>audit, finance leadership, entrepreneurship</b> and <b>venture investing</b>.</p>
+    <div class="facts">
+      <div class="fact"><b>ACCA</b> · qualified in the UK</div>
+      <div class="fact"><b>4 yrs</b> at KPMG</div>
+      <div class="fact"><b>CFO</b> in digital companies</div>
+      <div class="fact"><b>Founder</b> · Dibexport</div>
+      <div class="fact"><b>Investor</b> · Latenode &amp; Ustores</div>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="#journey">Explore the journey ↓</a>
+      <a class="btn ghost" href="mailto:ivan@latenode.com">Get in touch</a>
+    </div>
+    <div class="scrollhint"><span class="dot"></span> Scroll — the story climbs from the roots up</div>
+  </header>
+
+  <!-- TIMELINE -->
+  <section id="journey">
+    <div class="section-head">
+      <div class="eyebrow">The Journey</div>
+      <h2>A career, told bottom-up</h2>
+      <p>Every step built on the last — read it like a climb, from the roots at the bottom to today at the top.</p>
+      <div class="updown">Today ↑ &nbsp;·&nbsp; Roots ↓</div>
+    </div>
+
+    <div class="timeline">
+      <!-- TOP = present -->
+
+      <!-- Ustores -->
+      <div class="node">
+        <span class="pin"></span><span class="arm"></span>
+        <div class="card">
+          <div class="era">Today</div>
+          <div class="logo-row">
+            <div class="logo-chip">
+              <svg width="80" height="22" viewBox="0 0 80 22" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="3" width="16" height="16" rx="5" fill="#0ea5e9"/>
+                <path d="M4 7v4a4 4 0 0 0 8 0V7" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <text x="22" y="16" font-family="Space Grotesk,Arial" font-size="14" font-weight="700" fill="#0f172a">Ustores</text>
+              </svg>
+            </div>
+          </div>
+          <h3>Ustores</h3>
+          <div class="role">Investor &amp; Strategist</div>
+          <p class="desc">Backing and shaping the strategy of an e-commerce / retail-tech venture — bringing capital, financial discipline and go-to-market thinking to the table.</p>
+          <div class="tags"><span class="tag">Strategy</span><span class="tag">Investment</span><span class="tag">E-commerce</span></div>
+        </div>
+      </div>
+
+      <!-- Latenode -->
+      <div class="node">
+        <span class="pin"></span><span class="arm"></span>
+        <div class="card">
+          <div class="era">Present</div>
+          <div class="logo-row">
+            <div class="logo-chip">
+              <svg width="92" height="22" viewBox="0 0 92 22" xmlns="http://www.w3.org/2000/svg">
+                <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+                <rect x="0" y="3" width="16" height="16" rx="5" fill="url(#lg)"/>
+                <circle cx="5" cy="8" r="1.6" fill="#fff"/><circle cx="11" cy="8" r="1.6" fill="#fff"/><circle cx="8" cy="14" r="1.6" fill="#fff"/>
+                <path d="M5 8 L8 14 L11 8" stroke="#fff" stroke-width="1.2" fill="none"/>
+                <text x="22" y="16" font-family="Space Grotesk,Arial" font-size="14" font-weight="700" fill="#0f172a">Latenode</text>
+              </svg>
+            </div>
+          </div>
+          <h3>Latenode</h3>
+          <div class="role">Investor</div>
+          <p class="desc">A low-code <b>workflow-automation platform</b> that lets teams connect apps, AI models and custom code into automated business processes. Invested early in the vision of AI-native automation.</p>
+          <div class="tags"><span class="tag">Workflow Automation</span><span class="tag">Low-code</span><span class="tag">AI</span><span class="tag">SaaS</span></div>
+        </div>
+      </div>
+
+      <!-- Dibex / Dibexport -->
+      <div class="node">
+        <span class="pin"></span><span class="arm"></span>
+        <div class="card">
+          <div class="era">Entrepreneur</div>
+          <div class="logo-row">
+            <div class="logo-chip">
+              <svg width="98" height="22" viewBox="0 0 98 22" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="3" width="16" height="16" rx="5" fill="#10b981"/>
+                <path d="M4 11h8M8.5 7.5l3.5 3.5-3.5 3.5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="22" y="16" font-family="Space Grotesk,Arial" font-size="14" font-weight="700" fill="#0f172a">Dibexport</text>
+              </svg>
+            </div>
+          </div>
+          <h3>Dibex → Dibexport</h3>
+          <div class="role">Founder · First own business</div>
+          <p class="desc">Stepped out on my own — founding Dibex and then scaling it into <b>Dibexport</b>, an international trade &amp; export business. My first taste of building a company from zero and owning the P&amp;L end-to-end.</p>
+          <div class="tags"><span class="tag">Founder</span><span class="tag">Export &amp; Trade</span><span class="tag">Ownership</span></div>
+        </div>
+      </div>
+
+      <!-- CFO / CarPrice -->
+      <div class="node">
+        <span class="pin"></span><span class="arm"></span>
+        <div class="card">
+          <div class="era">Finance Leadership</div>
+          <div class="logo-row">
+            <div class="logo-chip">
+              <svg width="96" height="22" viewBox="0 0 96 22" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="3" width="20" height="16" rx="4" fill="#ff5a1f"/>
+                <path d="M4 15c0-3 2.4-5 6-5s6 2 6 5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <circle cx="6.5" cy="15.5" r="1.6" fill="#fff"/><circle cx="13.5" cy="15.5" r="1.6" fill="#fff"/>
+                <text x="26" y="16" font-family="Space Grotesk,Arial" font-size="13.5" font-weight="700" fill="#0f172a">CarPrice</text>
+              </svg>
+            </div>
+          </div>
+          <h3>CFO — Digital Companies</h3>
+          <div class="role">Chief Financial Officer · incl. CarPrice</div>
+          <p class="desc">Moved from advisor to operator — taking the <b>CFO seat</b> in fast-scaling digital businesses such as <b>CarPrice</b>. Owned finance, planning, fundraising and unit economics inside high-growth tech.</p>
+          <div class="tags"><span class="tag">CFO</span><span class="tag">FP&amp;A</span><span class="tag">Fundraising</span><span class="tag">Unit Economics</span></div>
+        </div>
+      </div>
+
+      <!-- KPMG -->
+      <div class="node">
+        <span class="pin"></span><span class="arm"></span>
+        <div class="card">
+          <div class="era">4 Years</div>
+          <div class="logo-row">
+            <div class="logo-chip">
+              <svg width="70" height="22" viewBox="0 0 70 22" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="17" font-family="Space Grotesk,Arial" font-size="17" font-weight="700" fill="#00338d" letter-spacing="0.5">KPMG</text>
+              </svg>
+            </div>
+          </div>
+          <h3>KPMG</h3>
+          <div class="role">Finance · Audit · Consulting</div>
+          <p class="desc">Four formative years inside a <b>Big Four</b> firm — auditing and advising businesses across finance and consulting. Where rigour, analytical discipline and financial fluency became second nature.</p>
+          <div class="tags"><span class="tag">Audit</span><span class="tag">Consulting</span><span class="tag">Big Four</span></div>
+        </div>
+      </div>
+
+      <!-- ACCA -->
+      <div class="node">
+        <span class="pin"></span><span class="arm"></span>
+        <div class="card">
+          <div class="era">Education</div>
+          <div class="logo-row">
+            <div class="logo-chip">
+              <svg width="60" height="22" viewBox="0 0 60 22" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="17" font-family="Space Grotesk,Arial" font-size="16" font-weight="700" fill="#e4007c" letter-spacing="1">ACCA</text>
+              </svg>
+            </div>
+          </div>
+          <h3>ACCA — United Kingdom</h3>
+          <div class="role">Chartered financial education</div>
+          <p class="desc">Earned a professional financial education and the <b>ACCA</b> qualification in the <b>UK</b> — the foundation of an international career built on accounting and finance.</p>
+          <div class="tags"><span class="tag">ACCA</span><span class="tag">Finance</span><span class="tag">United Kingdom</span></div>
+        </div>
+      </div>
+
+      <!-- ORIGIN -->
+      <div class="origin">
+        <div class="star">
+          <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.8 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill="#fff"/></svg>
+        </div>
+        <small>Born in the USSR — where it all began</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="name">Ivan Korotaev</div>
+    <div class="links">
+      <a href="mailto:ivan@latenode.com">✉ ivan@latenode.com</a>
+      <a href="https://www.latenode.com" target="_blank" rel="noopener">Latenode ↗</a>
+      <a href="https://www.linkedin.com/in/ivankorotaev" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <div class="copy">© <span id="yr"></span> Ivan Korotaev · Built with care.</div>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // scroll reveal
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.18});
+  document.querySelectorAll('.node').forEach(n=>io.observe(n));
+</script>
+</body>
+</html>
